@@ -1,0 +1,78 @@
+
+{% block content %}
+    <div class="header">
+        <h1> ⚠️Stock information⚠️</h1>
+    </div>
+    <div class="spacer"></div>
+    <div class="main">
+        <p>The cashier will give you a ticket which you will have to present at the offer stand at the exit of the shop in order to collect the bottle of wine. However, there may not be enough bottles of wine for everyone. Therefore, if the stock is exhausted you will receive €10 instead of the bottle of wine.</p>
+        <p>Le(la) caissier(-ière)  vous donne un ticket qu'il faudra présenter au stand de l'offre qui se situe à la sortie du magasin afin de récupérer la bouteille de vin. Cependant, il se peut qu'il n'y ait pas assez de bouteille de vin pour tout le monde. Par conséquent, si le stock est épuisé vous recevrez 10 € au lieu de la bouteille de vin.</p>
+        <div class="button-container">
+            {{ next_button }}
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+        }
+
+        .spacer {
+            height: 40px;
+        }
+
+        .main {
+            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #2c3e50;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+         button {
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 22px 44px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1a242f;
+            padding: 22px 44px;
+        }
+    </style>
+{% endblock %}

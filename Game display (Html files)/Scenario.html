@@ -1,0 +1,76 @@
+{% block content %}
+    <div class="header">
+        <h1><span class="scenario">Scenario</span></h1>
+    </div>
+    <div class="spacer"></div>
+    <div class="main">
+        <p class="main-text">You have just finished shopping in your usual supermarket. You are about to pay but the cashier tells you that there is a special offer for loyal customers. You can choose between a €10 discount on the shopping you have just done or a bottle of wine. However, before you make your decision you would  like to have more information about this bottle of wine.</p>
+        <p class="main-text">Vous venez de finir vos courses dans votre supermarché habituel. Vous êtes sur le point de payer mais le(la) caissier(-ière) vous explique qu'il y a une offre exceptionnelle pour les clients fidèles. Vous pouvez choisir entre 10 € de réduction sur les courses que vous venez de faire ou une bouteille de vin. Cependant, avant de prendre votre décision vous souhaiteriez avoir plus d'informations concernant cette bouteille de vin. </p>
+        <div class="button-container">
+            {{ next_button }}
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .scenario {
+            font-size: 60px;
+        }
+
+        .spacer {
+            height: 40px;
+        }
+
+        .main {
+            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #2c3e50;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-text {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+         button {
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 22px 44px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1a242f;
+            padding: 22px 44px;
+        }
+    </style>
+{% endblock %}

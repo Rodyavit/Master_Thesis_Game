@@ -1,0 +1,64 @@
+{% block title %}
+    <div style="text-align:center">
+       <p>From what amount would you change your mind?</p>
+        <p>À partir de quel montant changeriez-vous d'avis?</p>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="main">
+        <div class="form-container" style="text-align:center">
+            {{ formfields }}
+            <div class="button-container">
+                {{ next_button }}
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .main {
+            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+            border: 2px solid #2c3e50;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-container {
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 22px 44px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1a242f;
+            padding: 26px 50px;
+        }
+    </style>
+{% endblock %}
