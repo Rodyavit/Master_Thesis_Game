@@ -114,6 +114,7 @@ class Player(BasePlayer):
 
 # METHODS ==============================================================================================================
 
+#TO RANDOMISE PARTICIPANTS
 def creating_session(subsession):
     subsession.group_randomly()
 
