@@ -5,6 +5,6 @@
  
  In the _Game display_ folder you will find HTML files which has been used to display the game to the participants.
  
- In the _Analysis_ folder you will find my different analysis and the main dataset
+ In the _Data_ folder you will find the different dataset which have been used for my thesis.
  
  
